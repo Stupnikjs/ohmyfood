@@ -1,0 +1,17 @@
+$mainGrey: rgb(247, 242, 242); 
+$fontGrey: lightgrey; 
+$titleFont: "Shrikhand", cursive;
+$mainFont: "Roboto", sans-serif; 
+$colorPrimary: #9356DC; 
+
+
+body{
+    margin: 0;
+    font-family: $mainFont; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Roboto:wght@400;500&family=Shrikhand&display=swap');
+
+@import "mixin/mixin"; 
+@import "pages/mobile.scss"; 
