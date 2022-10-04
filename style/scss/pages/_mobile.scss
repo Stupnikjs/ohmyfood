@@ -50,7 +50,7 @@
         font-weight: 600;
         font-size: 0.9em;
         // a ameliorer 
-        box-shadow: 0.4em -0.2em 0.4em $fontGrey;
+        box-shadow: 0.22em 0.2em 0.5em rgba(6, 7, 7, 0.1);
         i{
             margin-left: 5%;
             display: flex;
@@ -82,46 +82,44 @@
 
 .restaurants{
     background-color: $mainGrey;
-    height: 50vh;
-    padding-left:5% ;
-    padding-top: 6%;
+    height: 100%;
+    padding:5% 6% ;
+   
     h2{
         font-size: 1.4em;
     }
-    .restaurant{
 
+    // creer des id pour mmodifier les marges individuellements 
+    .restaurant{
+        background-color: white;
+        border-radius: 20px;
+        div{
+            width: 100%;
+            
+            .conteneurImg{  
+                overflow: hidden;
+            }
+            img{
+                margin: -30px 0; // marge negative pour rogner image
+                border-radius: 20px 20px 0 0 ;
+                object-fit: contain;
+                width: 100%;
+                height: auto;
+            }
+        }
     }
 
 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footerAcceuil{
+    background-color: rgb(73, 73, 73);
+    color: white;
+    h2{
+        margin: 0;
+    }
+}
 
 
 
