@@ -1,21 +1,42 @@
 @media (max-width:776px) {
-    
+  
     
 .headerAcceuil{
+    h1{
+        text-align: center;
+    }
+}
+.localisation{
+    width: 100%;
+    background-color: rgb(235, 226, 226);
+    box-shadow: inset 0px 2px  3px rgba(85, 77, 77, 0.4);
+    height: 5vh;
+    text-align: center;
+    padding-top: 10px ;
+    font-size: 0.7em;
+    color: rgb(73, 71, 71);
+    font-weight: 600;
+    span{
+        margin-left: 5px;
+    }
+} 
+.headerPadding{
     background-color: $mainGrey; 
     margin: 0;
     text-align: center;
     font-size: 0.7em;
-    padding: 5% 20% ;
+    padding: 5% 17% ;
     
     h1{
         margin: 0;
+        background-color: white;
+        width: 100%;
     }
-    h2{
-        color: $fontGrey;
-    }
+    
+   
     p{
         margin-bottom: 20px;
+        color: grey;
     }
     button{
         border-radius: 30px;
@@ -35,7 +56,7 @@
     margin-left: 5%;
     margin-bottom: 15%;
 
-    .titre{
+    .titreFonctionnement{
         font-size: 1.3em;
         font-weight: bold;
     }
@@ -93,29 +114,73 @@
     .restaurant{
         background-color: white;
         border-radius: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
         div{
             width: 100%;
-            
+            border-radius: 20px 20px 0 0  ;
             .conteneurImg{  
                 overflow: hidden;
+            
             }
             img{
-                margin: -30px 0; // marge negative pour rogner image
-                border-radius: 20px 20px 0 0 ;
+                // marge negative pour rogner image
                 object-fit: contain;
                 width: 100%;
                 height: auto;
+
             }
+            #palettedugout{
+                margin: -70px 0 0 0;
+            }
+            #lanoteenchantee{
+                margin:  -150px 0 -100px 0;
+            }
+            #alafrancaise{
+                margin:  -60px 0 -10px 0;
+            }
+            #ledelicedessens{
+                margin:  -60px 0 0 0;
+            }
+
+        
+        .flexCoeur{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .conteneurText{
+                height: 8vh;
+                h3,p{
+                    margin: 10px;
+                    width: 100%;
+                   
+                }
+                h3 {
+                    display: inline-block;
+                }
+              
+                
+        }
+           i{
+            margin-right: 30px;
+            font-size: 1.2em;
+           }
+        }
         }
     }
 
 
+   
 }
 
 
 .footerAcceuil{
     background-color: rgb(73, 73, 73);
     color: white;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 0.8em;
     h2{
         margin: 0;
     }

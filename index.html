@@ -8,52 +8,92 @@
     <title>Document</title>
 </head>
 <body>
+
     <header class="headerAcceuil">
-            <h1>ohmyfood</h1>
-            <div><p>Paris, Belleville </p></div>
-        <h2> Réserver le menu qui vous convient </h2>
-        <p> Découvrez des restaurants d'exception séléctionnés par nos soins.</p>
-        <button> Explorer nos restaurants </button>
+            <h1 class="titre">ohmyfood</h1>
+            <div class="localisation">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Paris, Belleville </span>
+            </div>
+        <div class="headerPadding">
+            <h2> Réserver le menu qui vous convient </h2>
+            <p> Découvrez des restaurants d'exception séléctionnés par nos soins.</p>
+            <button> Explorer nos restaurants </button>
+        </div>        
     </header>
     <section class="fonctionnement">
-        <h2 class="titre"> Fonctionnement </h2>
+        <h2 class="titreFonctionnement"> Fonctionnement </h2>
         <div class="étape"> <span class="nombre">1</span> <i class="fa-solid fa-mobile-screen-button"></i> <p>Choisissez un restaurant</p></div>
         <div class="étape"><span class="nombre">2</span><i class="fa-solid fa-list"></i><p>Composez votre menu</p></div>
         <div class="étape"><span class="nombre">3</span><i class="fa-solid fa-store"></i><p>Dégustez au restaurant</p></div>
     </section>
     <section class="restaurants">
+        <!-- commentaire -->
+
         <h2>Restaurants</h2>
         <article class="restaurant">
-            <div>
-                <div class="conteneurImg"><img src="assets/images/restaurants/img1.jpg" alt="Ménilmontant"></div>
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
+          <div>
+            <div class="conteneurImg"><img 
+                 id="palettedugout" 
+                 src="assets/images/restaurants/img1.jpg" alt="Ménilmontant"></div>
+            <div class="flexCoeur">
+                <div class="conteneurText">
+                    <h3>La palette du goût</h3> 
+                    <p>Ménilmontant</p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
             </div>
+          </div>
+            </article>
         </article>
         <article class="restaurant">
             <div>
-                <div class="conteneurImg"><img src="assets/images/restaurants/img2.jpg" alt=""></div>
-                <h3>La note enchantée</h3>
+                <div class="conteneurImg"><img
+                    id="lanoteenchantee" 
+                    src="assets/images/restaurants/img2.jpg" alt=""></div>
+            <div class="flexCoeur">
+                <div class="conteneurText">
+                <h3>La note enchantée</h3> 
                 <p>Charonne</p>
             </div>
-        </article>
-        <article class="restaurant">
-            <div>
-                <div class="conteneurImg"><img src="assets/images/restaurants/img3.jpg" alt="citérouge"></div>
-                <h3> À la française </h3>
-                <p>Cité Rouge</p>
+            <i class="fa-regular fa-heart"></i>
+            </div>
             </div>
         </article>
         <article class="restaurant">
             <div>
-                <div class="conteneurImg"><img src="assets/images/restaurants/img4.jpg" alt="foliemericourt"></div>
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
+                <div class="conteneurImg"><img 
+                    id="alafrancaise"
+                    src="assets/images/restaurants/img3.jpg" alt="citérouge"></div>
+                <div class="flexCoeur">
+                <div class="conteneurText">
+                <h3> À la française </h3> 
+                <p>Cité Rouge</p>
+            </div>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+            </div>
+        </article>
+        <article class="restaurant">
+            <div>
+                <div class="conteneurImg"><img 
+                    id="ledelicedessens"
+                    src="assets/images/restaurants/img4.jpg" 
+                    alt="foliemericourt"></div>
+            <div class="flexCoeur">
+                <div class="conteneurText">
+                    <h3>Le délice des sens</h3> 
+                    <p>Folie-Méricourt</p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            </div>
             </div>
         </article>
     </section>
     <footer class="footerAcceuil">
-        <h2 class="titreFooter">ohmyfood</h2>
+        <h2 class="titreFooter titre">ohmyfood</h2>
         <p> Proposer un restaurant</p>
         <p> Devenir partenaire </p>
         <p> Mentions légales</p>
