@@ -67,37 +67,11 @@
 
  font-size: 0.6rem;
  margin: 5% 0;
+ border-radius: 15px;
  display: flex ;
- &:hover{
-    .checked{
-        
-        i{ 
-            display: flex; 
-            font-size: 1.5rem; 
-            color: white;
-           
-        }; 
-        animation: checked 1s;
-        animation-fill-mode: forwards;
-    }
+ overflow: hidden;
 }
-
-}
-.texte{
-    border-radius: 20px 20px 20x 20px;
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    background-color: white;
-    p{
-        span{
-            margin-left: 65%;
-        }
-    }
-
-}
-
-.checked{
+ .checked{
     background-color: aquamarine;
     width: 0%;
     display: flex;
@@ -106,7 +80,39 @@
     justify-content: center;
     i{
         display: none;
-        
+    }
+
+    }
+ 
+ .texte:hover ~ .checked{
+        i{   
+           animation: flip 1s;
+            display: flex; 
+            font-size: 1.5rem; 
+            color: white; 
+        }; 
+        animation: checked 500ms;
+        animation-fill-mode: forwards;
+    }
+
+
+
+.texte{
+    border-radius: 20px 20px 20x 20px;
+    padding: 0 0 0 10px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: white;
+    h4{
+        font-weight: 600;
+        margin: 5px 0 0 0;
+    }
+    p{
+       
+        span{
+            margin-left: 60%;
+        }
     }
 
 }
