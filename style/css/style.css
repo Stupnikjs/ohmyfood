@@ -6,6 +6,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@keyframes checked {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
 @media (max-width: 776px) {
   .headerAcceuil h1 {
     text-align: center;
@@ -237,27 +245,38 @@ body {
     background-color: rgb(98, 224, 182);
   }
   .carte {
-    display: grid;
     font-size: 0.6rem;
-    background-color: white;
-    width: auto;
-    margin: 3% 0;
-    border-radius: 10px;
-    box-shadow: 0.2rem 0.2rem 0.4rem rgba(128, 128, 128, 0.15);
-  }
-  .carte h4 {
-    margin: 3%;
-  }
-  .carte p {
-    display: inline-block;
-    grid-row: 2;
-    margin: 0 3% 3% 3%;
-  }
-  .carte span {
+    margin: 5% 0;
     display: flex;
-    justify-content: flex-end;
-    grid-row: 2;
-    margin: 0 20%;
+  }
+  .carte:hover .checked {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    animation: checked 1s;
+    animation-fill-mode: forwards;
+  }
+  .texte {
+    border-radius: 20px 20px 20x 20px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: white;
+  }
+  .texte p span {
+    margin-left: 65%;
+  }
+  .checked {
+    background-color: aquamarine;
+    width: 0%;
+    border-radius: 0 20px 20px 0;
+  }
+  .checked i {
+    display: none;
+  }
+  .buttonBox {
+    text-align: center;
+    margin: 10% 0;
   }
   .commande {
     padding: 2% 10%;
