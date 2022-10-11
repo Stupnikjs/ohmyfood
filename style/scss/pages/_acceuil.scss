@@ -63,8 +63,7 @@
         border-radius: 20px;
         font-weight: 600;
         font-size: 0.9em;
-        // a ameliorer 
-        box-shadow: 0.22em 0.2em 0.5em rgba(6, 7, 7, 0.1);
+        box-shadow: $shadow; 
         i{
             margin-left: 5%;
             display: flex;
@@ -197,17 +196,6 @@
 
    
 
-
-.footerAcceuil{
-    background-color: rgb(73, 73, 73);
-    color: white;
-    padding-top: 15px;
-    padding-left: 20px;
-    font-size: 0.8em;
-    h2{
-        margin: 0;
-    }
-}
 
 
 

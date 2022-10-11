@@ -3,7 +3,7 @@
 
 .headerResto{
     display: flex;
-    height: 30px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     h1{
@@ -14,7 +14,7 @@
     i{
         position: absolute;
         left: 6%;
-        top: 1%;
+        top: 3%;
         color: black;
         
     }
@@ -29,8 +29,6 @@
 
 }
 
-
-
 .menu{
     margin-top: -50px;
     background-color:$mainGrey;
@@ -40,22 +38,24 @@
 }
 
 .titreResto{
-    display: flex;
-    justify-content: space-around;
+    margin: 10px 0 20px 10px;
+    font-size: 1.5rem;
     height: 40px;
-    
+    i{
+        margin-left: 35%;
+    }
 }
 
 .titreSouligné{
-   margin: 0;
-   font-size: 0.7rem;
+   margin: 0 10px;
+   font-size: 0.8rem;
    font-weight: 400;
 }
 
 
 
 .barreVerte{
-    margin-top: 2px;
+    margin: 5px 10px 0 10px; 
     display: block;
     width: 25px;
     height: 2px;
@@ -66,16 +66,18 @@
 .carte{
 
  font-size: 0.6rem;
- margin: 5% 0;
- border-radius: 15px;
+ margin: 4% 0;
+ border-radius: 10px;
  display: flex ;
  overflow: hidden;
+ box-shadow: $shadow;
+ animation: fadein 2s; 
 }
  .checked{
-    background-color: aquamarine;
+    background-color: rgb(131, 228, 196);
     width: 0%;
     display: flex;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 10px 10px 0;
     align-items: center;
     justify-content: center;
     i{
@@ -88,7 +90,8 @@
         i{   
            animation: flip 1s;
             display: flex; 
-            font-size: 1.5rem; 
+            font-size: 1rem;
+            font-weight: 800; 
             color: white; 
         }; 
         animation: checked 500ms;
@@ -99,7 +102,7 @@
 
 .texte{
     border-radius: 20px 20px 20x 20px;
-    padding: 0 0 0 10px;
+    padding: 5px 5px 5px 10px;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
@@ -107,11 +110,36 @@
     h4{
         font-weight: 600;
         margin: 5px 0 0 0;
+        font-size: 1rem;
     }
-    p{
+
+    div{
+       display: grid;
+       grid-template-columns: 1fr 20% ;
+       font-size: 0.85rem;
+       margin: 5px 2px;
+       color: rgb(63, 61, 61);
        
+       p{
+        margin: 0;
+        grid-row: 1;
+        font-size: 1rem;
+        overflow: hidden;
+        white-space: nowrap;
+        
+       }
         span{
-            margin-left: 60%;
+            
+            padding: 0 5px;
+            color: black;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin: 0;
+            grid-row: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 20px;
         }
     }
 
@@ -126,7 +154,7 @@
 }
 
 .commande{
-    padding: 2% 10%;
+    padding: 3.5% 10%;
     font-size: 0.6rem;
 }
 

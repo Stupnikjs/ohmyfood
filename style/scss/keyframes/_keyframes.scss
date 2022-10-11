@@ -3,7 +3,7 @@
    
 }
 100% {
-    width: 15%; 
+    width: 12%; 
 }
 }
 
@@ -14,5 +14,14 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
