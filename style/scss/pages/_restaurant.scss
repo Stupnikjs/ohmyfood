@@ -46,6 +46,13 @@
     }
 }
 
+/*
+.plat{
+    &:first-child:enabled{animation: fadein 1s ease-out; } ; 
+    &:nth-child(2):enabled{animation: fadein 2s ease-out;}
+}
+*/
+
 .titreSouligné{
    margin: 0 10px;
    font-size: 0.8rem;
@@ -71,8 +78,33 @@
  display: flex ;
  overflow: hidden;
  box-shadow: $shadow;
- animation: fadein 2s; 
+ opacity: 0;
+
 }
+
+.carte:nth-child(3){ 
+    animation: fadein 2s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+   
+   
+}
+.carte:nth-child(4){ 
+    animation: fadein 2s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    
+}
+.carte:nth-child(5){ 
+    animation: fadein 2s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    
+}
+
+
+
+
  .checked{
     background-color: rgb(131, 228, 196);
     width: 0%;

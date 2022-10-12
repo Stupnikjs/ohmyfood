@@ -23,10 +23,19 @@ body {
   }
 }
 @keyframes fadein {
-  from {
+  0% {
     opacity: 0;
+    transform: translateY(10%);
   }
-  to {
+  10% {
+    opacity: 0.7;
+    transform: translateY(10%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -241,6 +250,12 @@ body {
   .titreResto i {
     margin-left: 35%;
   }
+  /*
+  .plat{
+      &:first-child:enabled{animation: fadein 1s ease-out; } ; 
+      &:nth-child(2):enabled{animation: fadein 2s ease-out;}
+  }
+  */
   .titreSouligné {
     margin: 0 10px;
     font-size: 0.8rem;
@@ -260,7 +275,22 @@ body {
     display: flex;
     overflow: hidden;
     box-shadow: 0.22em 0.2em 0.8em rgba(6, 7, 7, 0.1);
-    animation: fadein 2s;
+    opacity: 0;
+  }
+  .carte:nth-child(3) {
+    animation: fadein 2s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+  .carte:nth-child(4) {
+    animation: fadein 2s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+  .carte:nth-child(5) {
+    animation: fadein 2s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
   }
   .checked {
     background-color: rgb(131, 228, 196);
@@ -373,15 +403,17 @@ footer p .fa-handshake-angle {
   margin-right: 2px;
 }
 
+/*
 .loader {
-  position: fixed;
-  z-index: 9999;
-  background: url("../../assets/images/Loading_icon.gif") 50% 50% no-repeat;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  cursor: wait;
-}
+    position : fixed;
+    z-index: 9999;
+    background : url('../../assets/images/Loading_icon.gif') 50% 50% no-repeat;
+    top : 0px;
+    left : 0px;
+    height : 100%;
+    width : 100%;
+    cursor : wait;
+    }
+    */
 
 /*# sourceMappingURL=style.css.map */
