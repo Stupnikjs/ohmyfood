@@ -46,12 +46,7 @@
     }
 }
 
-/*
-.plat{
-    &:first-child:enabled{animation: fadein 1s ease-out; } ; 
-    &:nth-child(2):enabled{animation: fadein 2s ease-out;}
-}
-*/
+
 
 .titreSouligné{
    margin: 0 10px;
@@ -96,6 +91,12 @@
     
 }
 .carte:nth-child(5){ 
+    animation: fadein 2s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    
+}
+.carte:nth-child(6){ 
     animation: fadein 2s ease-in;
     animation-fill-mode: forwards;
     animation-delay: 1s;
@@ -200,6 +201,11 @@
 
 
 
+#lanoteenchantee,#lapalettedugout {
+    i {
+        margin-left: 15%;
+    }
+}
 
 
 

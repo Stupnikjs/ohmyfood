@@ -1,0 +1,13 @@
+animation coeur: 
+- before 
+
+animation check : 
+ - cursor pointer
+ - ajuster largeur du carré du check 
+ 
+animation fadein: 
+
+page le delice des sens: 
+
+- taille des polices : carte resto et bouton commander 
+- image des resto respectifs 

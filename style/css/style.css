@@ -250,12 +250,6 @@ body {
   .titreResto i {
     margin-left: 35%;
   }
-  /*
-  .plat{
-      &:first-child:enabled{animation: fadein 1s ease-out; } ; 
-      &:nth-child(2):enabled{animation: fadein 2s ease-out;}
-  }
-  */
   .titreSouligné {
     margin: 0 10px;
     font-size: 0.8rem;
@@ -288,6 +282,11 @@ body {
     animation-delay: 1s;
   }
   .carte:nth-child(5) {
+    animation: fadein 2s ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+  .carte:nth-child(6) {
     animation: fadein 2s ease-in;
     animation-fill-mode: forwards;
     animation-delay: 1s;
@@ -361,6 +360,9 @@ body {
     padding: 3.5% 10%;
     font-size: 0.6rem;
   }
+  #lanoteenchantee i, #lapalettedugout i {
+    margin-left: 15%;
+  }
 }
 .titre {
   font-family: "Shrikhand";
@@ -402,18 +404,5 @@ footer p i {
 footer p .fa-handshake-angle {
   margin-right: 2px;
 }
-
-/*
-.loader {
-    position : fixed;
-    z-index: 9999;
-    background : url('../../assets/images/Loading_icon.gif') 50% 50% no-repeat;
-    top : 0px;
-    left : 0px;
-    height : 100%;
-    width : 100%;
-    cursor : wait;
-    }
-    */
 
 /*# sourceMappingURL=style.css.map */
