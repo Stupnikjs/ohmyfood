@@ -1,13 +1,13 @@
-animation coeur: 
-- before 
+reste a faire 
 
-animation check : 
- - cursor pointer
- - ajuster largeur du carré du check 
- 
-animation fadein: 
+    - animation coeur: 
+        placement coeur resto titre 
+        ajuster police resto 
+    
+    - animation fadein: 
 
-page le delice des sens: 
+    - page le delice des sens: 
+        - taille des polices : carte resto et bouton commander 
+    
 
-- taille des polices : carte resto et bouton commander 
-- image des resto respectifs 
+full screen display 

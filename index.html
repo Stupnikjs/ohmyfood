@@ -23,83 +23,123 @@
     </header>
     <section class="fonctionnement">
         <h2 class="titreFonctionnement"> Fonctionnement </h2>
-        <div class="étape"> <span class="nombre">1</span> <i class="fa-solid fa-mobile-screen-button"></i> <p>Choisissez un restaurant</p></div>
-        <div class="étape"><span class="nombre">2</span><i class="fa-solid fa-list"></i><p>Composez votre menu</p></div>
-        <div class="étape"><span class="nombre">3</span><i class="fa-solid fa-store"></i><p>Dégustez au restaurant</p></div>
+        <div class="étape"> <span class="nombre"><p>1</p></span> <i class="fa-solid fa-mobile-screen-button"></i> <p>Choisissez un restaurant</p></div>
+        <div class="étape"><span class="nombre"><p>2</p></span><i class="fa-solid fa-list"></i><p>Composez votre menu</p></div>
+        <div class="étape"><span class="nombre"><p>3</p></span><i class="fa-solid fa-store"></i><p>Dégustez au restaurant</p></div>
     </section>
     <section class="restaurants">
         <!-- commentaire -->
 
         <h2>Restaurants</h2>
-        <article class="restaurant">
-          <div>
-            <div class="conteneurImg"><img 
-                 id="palettedugout" 
-                 src="assets/images/restaurants/img1.jpg" alt="Ménilmontant"></div>
-            <div class="flexCoeur">
-                <div class="conteneurText">
-                    <h3>La palette du goût</h3> 
-                    <p>Ménilmontant</p>
-                </div>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-heart"></i>
+        
+          
+            <article class="restaurant">
+              <div>
+                <a href="./lapalettedugout.html" class="conteneurImg"><img 
+                   id="palettedugout" 
+                   src="assets/images/restaurants/img1.jpg" alt="Ménilmontant">
+                   <span class="nouveau">Nouveau</span>
+                </a>
+              <div class="flexCoeur">
+                  <div class="conteneurText">
+                      <h3>La palette du goût</h3> 
+                      <p>Ménilmontant</p>
+                  </div>
+                  <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free 
+                        (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                        199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/>
+                    </svg>
+              </div>
             </div>
-          </div>
             </article>
-        </article>
-        <article class="restaurant">
-            <div>
-                <div class="conteneurImg"><img
-                    id="lanoteenchantee" 
-                    src="assets/images/restaurants/img2.jpg" alt=""></div>
-            <div class="flexCoeur">
-                <div class="conteneurText">
-                <h3>La note enchantée</h3> 
-                <p>Charonne</p>
-            </div>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-heart "></i>
-            </div>
-            </div>
-        </article>
-        <article class="restaurant">
-            <div>
-                <div class="conteneurImg"><img 
-                    id="alafrancaise"
-                    src="assets/images/restaurants/img3.jpg" alt="citérouge"></div>
-                <div class="flexCoeur">
-                <div class="conteneurText">
-                <h3> À la française </h3> 
-                <p>Cité Rouge</p>
-            </div>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-heart"></i>
-            </div>
-            </div>
-        </article>
-        <article class="restaurant">
-            <div>
-                <div class="conteneurImg"><img 
-                    id="ledelicedessens"
-                    src="assets/images/restaurants/img4.jpg" 
-                    alt="foliemericourt"></div>
-            <div class="flexCoeur">
-                <div class="conteneurText">
-                    <h3>Le délice des sens</h3> 
-                    <p>Folie-Méricourt</p>
+    
+            <article class="restaurant" id="lanote">
+                <div>
+                    <a class="conteneurImg" href="./lanoteenchantee.html"> 
+                    <img
+                        id="lanoteenchantee" 
+                        src="assets/images/restaurants/img2.jpg" alt="">
+                    <span class="nouveau">Nouveau</span>
+                    </a>
+                    <div class="flexCoeur">
+                        <div class="conteneurText">
+                        <h3>La note enchantée</h3> 
+                        <p>Charonne</p>
+                    </div>
+                    <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <defs>
+                            <linearGradient id="header-shape-gradient" x2="0.35" y2="1">
+                                <stop offset="0%" stop-color="var(--color-stop)" />
+                                <stop offset="30%" stop-color="var(--color-stop)" />
+                                <stop offset="100%" stop-color="var(--color-bot)" />
+                              </linearGradient>
+                          </defs>
+                        <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free 
+                            (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                            <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                            199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/>
+                        </svg>
                 </div>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-heart"></i>
-            </div>
+                </div>
+            </article>
+       
+      
+            <article class="restaurant" >
+                <div>
+                    <a href="./alafrancaise.html"  class="conteneurImg">
+                        <img 
+                            id="alafrancaise"
+                            src="assets/images/restaurants/img3.jpg" alt="citérouge">
+                    </a>
+                    <div class="flexCoeur">
+                    <div class="conteneurText">
+                    <h3> À la française </h3> 
+                    <p>Cité Rouge</p>
+                </div>
+                <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free 
+                        (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                        199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/>
+                    </svg>
+                </div>
+                </div>
+            </article>   
+     
+        
+            <article class="restaurant" id="ledelice">
+                <div>
+                    <a class="conteneurImg" href="./ledelicedessens.html">
+                    <img 
+                        id="ledelicedessens"
+                        src="assets/images/restaurants/img4.jpg" 
+                        alt="foliemericourt">
+                    </a>
+                <div class="flexCoeur">
+                    <div class="conteneurText">
+                        <h3>Le délice des sens</h3> 
+                        <p>Folie-Méricourt</p>
+                    </div>
+                    <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free 
+                            (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                            <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 
+                            199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/>
+                        </svg>
+                </div>
+    
+                </div>
+                </div>
+            </article>
 
-            </div>
-            </div>
-        </article>
+        
     </section>
     <footer class="footerAcceuil">
         <h2 class="titreFooter titre">ohmyfood</h2>
-        <p> Proposer un restaurant</p>
-        <p> Devenir partenaire </p>
+        <p> <i class="fa-sharp fa-solid fa-utensils"></i> Proposer un restaurant</p>
+        <p> <i class="fa-solid fa-handshake-angle"></i> Devenir partenaire </p>
         <p> Mentions légales</p>
         <p> Contact</p>
     </footer>

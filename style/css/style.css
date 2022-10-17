@@ -42,17 +42,19 @@ body {
 @media (max-width: 776px) {
   .headerAcceuil h1 {
     text-align: center;
+    margin: 0;
+    padding: 3px;
   }
   .localisation {
     width: 100%;
     background-color: rgb(235, 226, 226);
     box-shadow: inset 0px 2px 3px rgba(85, 77, 77, 0.4);
-    height: 5vh;
+    height: 4vh;
     text-align: center;
     padding-top: 10px;
-    font-size: 0.7em;
-    color: rgb(73, 71, 71);
-    font-weight: 600;
+    font-size: 0.8em;
+    color: rgb(37, 36, 36);
+    font-weight: 590;
   }
   .localisation span {
     margin-left: 5px;
@@ -62,7 +64,7 @@ body {
     margin: 0;
     text-align: center;
     font-size: 0.7em;
-    padding: 5% 17%;
+    padding: 5% 17% 10% 17%;
   }
   .headerPadding h1 {
     margin: 0;
@@ -113,7 +115,7 @@ body {
     border-radius: 50%;
     text-align: center;
     margin-left: -5%;
-    margin-top: 4%;
+    margin-top: 5%;
     color: white;
     font-size: 0.7em;
     font-weight: 400;
@@ -121,101 +123,109 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .fonctionnement .étape .nombre p {
+    margin: 2px 0 0 0;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   .restaurants {
     background-color: rgb(247, 242, 242);
     height: 100%;
     padding: 5% 6%;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
   }
   .restaurants h2 {
     font-size: 1.4em;
+    margin: 30px 0 10px 0;
   }
-  .restaurants .restaurant {
+  .restaurant {
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
+    height: 230px;
     font-size: 0.9em;
     box-shadow: 0.22em 0.2em 0.5em rgba(6, 7, 7, 0.1);
   }
-  .restaurants .restaurant div {
+  .restaurant > div {
     width: 100%;
     border-radius: 20px 20px 0 0;
+    display: grid;
+    grid-template-rows: 80% 20%;
   }
-  .restaurants .restaurant div .conteneurImg {
+  .restaurant > div .conteneurImg {
+    border-radius: 20px 20px 0 0;
     overflow: hidden;
+    margin: -10px 0 0 0;
+    height: 175px;
+    position: relative;
   }
-  .restaurants .restaurant div img {
+  .restaurant > div .conteneurImg .nouveau {
+    background-color: aquamarine;
+    position: absolute;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: grey;
+    padding: 5px;
+    top: 15px;
+    right: 15px;
+  }
+  .restaurant > div img {
     object-fit: contain;
+    margin: 0px 0 0 0;
     width: 100%;
     height: auto;
   }
-  .restaurants .restaurant div #palettedugout {
-    margin: -70px 0 0 0;
+  .restaurant > div #lanoteenchantee {
+    object-fit: contain;
+    margin: -150px 0 0 0;
+    width: 100%;
+    height: auto;
   }
-  .restaurants .restaurant div #lanoteenchantee {
-    margin: -150px 0 -100px 0;
+  .restaurant > div #alafrancaise, .restaurant > div #ledelicedessens, .restaurant > div #palettedugout {
+    margin: -50px 0 0 0;
   }
-  .restaurants .restaurant div #alafrancaise {
-    margin: -60px 0 -10px 0;
-  }
-  .restaurants .restaurant div #ledelicedessens {
-    margin: -60px 0 0 0;
-  }
-  .restaurants .restaurant div .flexCoeur {
+  .flexCoeur {
+    margin-top: -15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 1em;
-    /* animation coeur (à finir ) */
   }
-  .restaurants .restaurant div .flexCoeur .conteneurText {
-    height: 8vh;
-    margin-top: 5px;
+  .flexCoeur .conteneurText {
+    margin: 25px 0 0 20px;
   }
-  .restaurants .restaurant div .flexCoeur .conteneurText h3, .restaurants .restaurant div .flexCoeur .conteneurText p {
-    margin: 5px 10px 0 10px;
-    width: 100%;
+  .flexCoeur .conteneurText p, .flexCoeur .conteneurText h3 {
+    margin: 0;
   }
-  .restaurants .restaurant div .flexCoeur .conteneurText h3 {
-    display: inline-block;
+  #header-shape-gradient {
+    --color-stop: #c206f1;
+    --color-bot: #caacc8;
   }
-  .restaurants .restaurant div .flexCoeur i {
-    margin-right: 20px;
+  .heart {
+    width: 25px;
+    height: 25px;
+    margin: 20px 20px 0 0;
+    fill: rgb(253, 253, 253);
+    stroke: rgb(110, 106, 106);
+    stroke-width: 4%;
   }
-  .restaurants .restaurant div .flexCoeur i.fa-regular {
-    display: none;
-  }
-  .restaurants .restaurant div .flexCoeur i.fa-solid {
-    position: relative;
-    z-index: 1;
-    color: black;
-  }
-  .restaurants .restaurant div .flexCoeur i.fa-solid::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: rgb(235, 132, 212);
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 250ms;
-  }
-  .restaurants .restaurant div .flexCoeur i.fa-solid:hover {
-    color: pink;
-  }
-  .restaurants .restaurant div .flexCoeur i.fa-solid:hover::after {
-    opacity: 0;
+  .heart:hover {
+    fill: url(#header-shape-gradient);
+    stroke-width: 0;
+    transition: fill 0.5s;
+    transition: stroke-width 0.5s;
   }
 }
 @media (max-width: 776px) {
   .headerResto {
     display: flex;
-    height: 50px;
+    height: 60px;
     justify-content: center;
     align-items: center;
+    z-index: 1;
   }
   .headerResto h1 {
     display: inline-block;
@@ -228,10 +238,28 @@ body {
     top: 3%;
     color: black;
   }
+  /*
+  .headerResto {
+      margin: 0 0 -200px 0 ;
+      background-color: aqua;
+  }
+  */
+  #headerLaNote {
+    margin: 0 0 -100px 0;
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(70, 68, 68, 0.2);
+  }
+  img[src="/assets/images/restaurants/img2.jpg"] ~ .menu {
+    margin-top: -150px;
+  }
+  .imgRestoConteneur {
+    height: 300px;
+    width: 100%;
+  }
   .imgResto {
+    height: auto;
     object-fit: contain;
     width: 100%;
-    height: auto;
     z-index: -1;
     position: relative;
   }
@@ -247,8 +275,9 @@ body {
     font-size: 1.5rem;
     height: 40px;
   }
-  .titreResto i {
-    margin-left: 35%;
+  .titreResto .heart {
+    margin: 20px 0 0 90px;
+    padding: 2px;
   }
   .titreSouligné {
     margin: 0 10px;
@@ -380,7 +409,8 @@ body {
 .footerAcceuil {
   background-color: rgb(51, 49, 49);
   color: white;
-  padding-top: 15px;
+  padding-top: 8px;
+  height: 150px;
   padding-left: 20px;
   font-size: 0.7em;
 }

@@ -1,9 +1,15 @@
+
+
 $mainGrey: rgb(247, 242, 242); 
 $fontGrey: lightgrey; 
 $titleFont: "Shrikhand", cursive;
 $mainFont: "Roboto", sans-serif; 
 $colorPrimary: #9356DC; 
 $shadow : 0.22em 0.2em 0.8em rgba(6, 7, 7, 0.1);
+$pinkGradient : linear-gradient(150deg, rgb(230, 143, 233) 0%, $colorPrimary 100%); 
+
+
+
 
 body{
     margin: 0;
@@ -36,7 +42,8 @@ body{
 .footerAcceuil{
     background-color: rgb(51, 49, 49);
     color: white;
-    padding-top: 15px;
+    padding-top: 8px;
+    height: 150px;
     padding-left: 20px;
     font-size: 0.7em;
     h2{

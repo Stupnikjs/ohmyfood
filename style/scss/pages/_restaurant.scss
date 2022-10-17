@@ -3,13 +3,16 @@
 
 .headerResto{
     display: flex;
-    height: 50px;
+    height: 60px;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+    
     h1{
         display: inline-block;
         text-align: center;
         position: relative;
+      
     }
     i{
         position: absolute;
@@ -19,15 +22,42 @@
         
     }
 }
+/*
+.headerResto {
+    margin: 0 0 -200px 0 ;
+    background-color: aqua;
+}
+*/
+
+#headerLaNote{
+    margin: 0 0 -100px 0 ;
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(rgb(70, 68, 68), .2);
+}
+
+img[src="/assets/images/restaurants/img2.jpg"] ~ .menu{
+    margin-top: -150px ;
+}
+
+
+.imgRestoConteneur{
+    height: 300px;
+    width: 100%;
+    
+}
 
 .imgResto{
+    height: auto;
     object-fit: contain;
     width: 100%;
-    height: auto;
     z-index: -1;
     position: relative;
 
 }
+
+
+
+
 
 .menu{
     margin-top: -50px;
@@ -41,8 +71,9 @@
     margin: 10px 0 20px 10px;
     font-size: 1.5rem;
     height: 40px;
-    i{
-        margin-left: 35%;
+    .heart{
+        margin: 20px 0 0 90px;
+        padding: 2px;
     }
 }
 
